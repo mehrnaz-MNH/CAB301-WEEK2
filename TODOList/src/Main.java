@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     // Static list of users, acting as a database
+
     private static ArrayList<User> users = new ArrayList<>();
 
     // Mock authentication service that always returns the first user when log in, and does nothing when sign up
