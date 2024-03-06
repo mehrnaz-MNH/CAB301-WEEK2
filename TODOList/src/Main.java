@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -82,15 +84,19 @@ public class Main {
     /**
      * Handles the sign-up process.
      */
-    public static void onSignUp() {
-        System.out.print("Enter your username: ");
-        Scanner scanner = new Scanner(System.in);
-        String username = scanner.nextLine();
-        System.out.print("Enter your password: ");
-        String password = scanner.nextLine();
-        User user = authService.signUp(username, password);
-        // TODO Later: Shows a message based on the result
-    }
+        public static void onSignUp() {
+            System.out.print("Enter your username: ");
+            Scanner scanner = new Scanner(System.in);
+            String username = scanner.nextLine();
+            System.out.print("Enter your password: ");
+            String password = scanner.nextLine();
+            User user = authService.signUp(username, password);
+            // TODO Now: Show a message based on the result of the signUp method:
+            // - If the user is not null, show "User <username> has been created successfully!"
+            // - If the user is null, show "The username is already taken!"
+        }
+
+
 
     /**
      * Exits the application by setting the `isRunning` flag to false.
